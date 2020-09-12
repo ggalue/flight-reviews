@@ -47,7 +47,7 @@ const Airlines = () => {
 	return (
 		<Home>
 			<Header>
-				<h1>OpenFlights</h1>
+				<h1>Flight Reviews</h1>
 				<Subheader>Honest, unbiased airline reviews.</Subheader>
 			</Header>
 			<Grid>
