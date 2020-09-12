@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Rating from '../Rating/Rating'
 
 const Wrapper = styled.div`
 	padding: 50px 100px 50px 0;
@@ -31,8 +32,8 @@ const Header = (props) => {
 	return (
 		<Wrapper>
 			<h1> <img src={image_url} alt={name} /> {name}</h1>
-			<TotalReviews>{total} User Reviews</TotalReviews>
-			<div className="starRating"></div>
+			<TotalReviews>{total} user reviews</TotalReviews>
+			<Rating score={avg_score}/>
 			<TotalOutOf>{avg_score} out of 5</TotalOutOf>
 		</Wrapper>
 	)
